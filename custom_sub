@@ -30,8 +30,8 @@ ruleset=漏网之鱼,[]FINAL
 
 ;设置分组标志位
 custom_proxy_group=节点选择`select`.*
-custom_proxy_group=日本节点`select`(日本|东京|大阪|埼玉|JP|Japan)
-custom_proxy_group=非日本节点`select`(?!.*(日本|东京|大阪|埼玉|JP|Japan)).*
+custom_proxy_group=日本节点`select`(日本|JP)
+custom_proxy_group=非日本节点`select`^((?!(日本|JP)).)*$
 custom_proxy_group=游戏平台`select`[]节点选择`[]DIRECT`
 custom_proxy_group=全球直连`select`[]节点选择`[]DIRECT`
 custom_proxy_group=漏网之鱼`select`[]节点选择`[]DIRECT`
